@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
@@ -17,7 +18,6 @@ const ShopNav = () =>{
                 />
 
                 <ShoppingCartOutlinedIcon sx={{ color : "#ffff" }} fontSize='large'/>
-
             </div>
         </nav>
   )
