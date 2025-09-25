@@ -1,6 +1,7 @@
 import React from 'react'
 import { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server';
+import Footer from '@/components/Footer/Footer';
 
 
 type Params = {
@@ -11,7 +12,7 @@ type Params = {
 }
 
 export async function generateMetadata({ params } : Params): Promise<Metadata> {
-  const { locale, shop } = params;
+  const { locale, shop } = await params;
   const t = await getTranslations({ locale })
   const translatedShop = t('shopSlug')
   const tranlastedDescription = t('browseBrand')
@@ -23,7 +24,7 @@ export async function generateMetadata({ params } : Params): Promise<Metadata> {
 }
 
 export default async function Page({ params } : Params){
-  const { locale, shop } = await Promise.resolve(params)
+  const { locale, shop } = await params
   const t = await getTranslations({ locale }) 
 
   
@@ -31,6 +32,7 @@ export default async function Page({ params } : Params){
     
     <main>
       <h1>Brands</h1>
+      <Footer footerCopy={t('footerCopyright')}/>
     </main>
 
   )

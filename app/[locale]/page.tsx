@@ -7,7 +7,7 @@ import MainHero from '@/components/Hero/MainHero';
 type Locale = (typeof routing.locales)[number];
 
 export default async function Page({ params }: { params: { locale: Locale } }) {
-  const { locale } = params;
+  const { locale } = await params;
   const t = await getTranslations({ locale });
 
   return (
