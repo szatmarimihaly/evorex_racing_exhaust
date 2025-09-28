@@ -1,6 +1,6 @@
 import React from 'react'
 import BrandImage from '../Image/BrandImage'
-import BrandButton from '../Button/BrandButton'
+import LinkButton from '../Button/LinkButton'
 
 type BrandListProps = {
     id: number,
@@ -13,9 +13,10 @@ type Props = {
     types: BrandListProps[],
     locale: string,
     navigateName : string
+    shopSlug: string
 }
 
-const Brands = ({ types, locale, navigateName } : Props) => {
+const Brands = ({ types, locale, navigateName, shopSlug } : Props) => {
   return (
     <div className='w-full space-y-4 mt-10 max-w-7xl mx-auto px-4 mb-10'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
@@ -26,7 +27,7 @@ const Brands = ({ types, locale, navigateName } : Props) => {
                 >
                     
                     <BrandImage imageType={type.image} nameType={type.name} />
-                    <BrandButton brandText={navigateName}/>
+                    <LinkButton href={`/${locale}/${shopSlug}/${type.slug}`} text={navigateName} />
                 </div>
             ))}
         </div>

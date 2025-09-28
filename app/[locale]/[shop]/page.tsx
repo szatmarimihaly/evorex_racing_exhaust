@@ -8,6 +8,7 @@ import Brands from '@/components/DataCard/Brands';
 type Params = {
   params : {
     locale : string,
+    shop: string
   }
 }
 
@@ -24,7 +25,7 @@ export async function generateMetadata({ params } : Params): Promise<Metadata> {
 }
 
 export default async function Page({ params } : Params){
-  const { locale } = await params
+  const { locale, shop } = await params
   const t = await getTranslations({ locale }) 
 
   const { data: brandTypes, error } = await supabase
@@ -36,7 +37,7 @@ export default async function Page({ params } : Params){
   return (
     
     <main>
-      <Brands types={brandTypes ?? []}  locale={locale} navigateName={t('chooseButton')} />
+      <Brands types={brandTypes ?? []}  locale={locale} navigateName={t('chooseButton')} shopSlug={params.shop}/>
       <Footer footerCopy={t('footerCopyright')}/>
     </main>
 
