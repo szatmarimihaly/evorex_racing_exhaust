@@ -1,8 +1,18 @@
 {
-  "heroTitle" : "„BORN ON THE TRACK. BUILT FOR THE STREET.”",
+  "heroTitle" : "„BORN ON THE TRACK.”",
   "heroButton" : "SHOP NOW",
-  "shopSlug" : "CHOOSE BRAND",
+
+  "shopSlug" : "Choose Brand",
   "browseBrand" : "Browse our products by brands",
+
   "footerCopyright" : "© 2025 EVOREX. All rights reserved.",
-  "chooseButton" : "SEE DETAIL"
+  "chooseButton" : "SEE DETAIL",
+
+  "brandSlug" : "Choose Model",
+  "browseModel" : "Browse our products by models",
+
+  "toModal" : "View Product",
+
+  "productSite" : "Product Page for ",
+  "addToCart" : "Add to Cart"
 }

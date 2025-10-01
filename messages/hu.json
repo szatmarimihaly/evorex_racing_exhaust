@@ -1,8 +1,19 @@
 {
-  "heroTitle" : "„VERSENYPÁLYÁN SZÜLETETT. AZ UTCÁRA TERVEZVE. ”",
+  "heroTitle" : "„VERSENYPÁLYÁN SZÜLETETT.”",
   "heroButton" : "VÁSÁROLJ MOST",
-  "shopSlug" : "MÁKRAVÁLASZTÁS",
+
+  "shopSlug" : "Márkaválasztás",
   "browseBrand" : "Keresd termékeinket márkánként",
+
   "footerCopyright" : "© 2025 EVOREX. Minden jog fenntartva.",
-  "chooseButton" : "RÉSZLETEK"
+  "chooseButton" : "RÉSZLETEK",
+
+  "brandSlug" : "Modellválasztás",
+  "browseModel" : "Keresd termékeinket modellenként",
+
+  "toModal" : "Termék megtekintése",
+
+  "productSite" : "Termékoldal ehhez: ",
+  "addToCart" : "Kosárba"
+
 }

@@ -10,7 +10,7 @@ const LinkButton = ({ href, text } : LinkButtonProps) => {
   return (
     <Link
         href={href}
-        className=''
+        className=' bg-black text-white px-4 py-2 mt-10 rounded-lg font-medium shadow-xl'
     >
         {text}
     </Link>

@@ -10,7 +10,7 @@ type Props = {
 const MainHero = ({ text, shopText } : Props) => {
   return (
     <div className='mt-50 flex flex-col items-center justify-center'>
-        <h1 className='text-3xl md:text-4xl lg:text-5xl text-center font-semibold'>{text}</h1>
+        <h1 className='text-xl md:text-4xl lg:text-5xl text-center font-semibold'>{text}</h1>
          <div className="relative w-full max-w-6xl mt-50">
             <Image
             src="/heroImage2.jpg"

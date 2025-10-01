@@ -1,9 +1,9 @@
 import React from 'react'
 import { Metadata } from 'next'
-import { getTranslations } from 'next-intl/server';
-import Footer from '@/components/Footer/Footer';
-import { supabase } from '@/lib/supabaseClient';
-import Brands from '@/components/DataCard/Brands';
+import { getTranslations } from 'next-intl/server'
+import Footer from '@/components/Footer/Footer'
+import { supabase } from '@/lib/supabaseClient'
+import Brands from '@/components/DataCard/Brands'
 
 type Params = {
   params : {
@@ -19,7 +19,7 @@ export async function generateMetadata({ params } : Params): Promise<Metadata> {
   const tranlastedDescription = t('browseBrand')
 
   return {
-    title: translatedShop.toUpperCase(),
+    title: translatedShop,
     description: `${tranlastedDescription}`,
   }
 }
@@ -37,7 +37,7 @@ export default async function Page({ params } : Params){
   return (
     
     <main>
-      <Brands types={brandTypes ?? []}  locale={locale} navigateName={t('chooseButton')} shopSlug={params.shop}/>
+      <Brands types={brandTypes ?? []}  locale={locale} navigateName={t('chooseButton')} shopSlug={shop}/>
       <Footer footerCopy={t('footerCopyright')}/>
     </main>
 
