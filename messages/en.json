@@ -14,5 +14,9 @@
   "toModal" : "View Product",
 
   "productSite" : "Product Page for ",
-  "addToCart" : "Add to Cart"
+  "addToCart" : "Add to Cart",
+
+  "emptyText" : "Your cart is empty.",
+  "totalText" : "Total Price",
+  "deleteText" : "Delete Cart"
 }

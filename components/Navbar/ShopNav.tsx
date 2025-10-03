@@ -1,10 +1,14 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import Link from 'next/link'
+import { Badge, IconButton } from '@mui/material'
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
+import { useCartStore } from '@/store/cartStore'
 
 const ShopNav = () =>{
   
+    const totalItems = useCartStore((state) => state.totalItems)
   
     return (
         <nav className='px-4'>
@@ -17,7 +21,19 @@ const ShopNav = () =>{
                     priority
                 />
 
-                <ShoppingCartOutlinedIcon sx={{ color : "#ffff" }} fontSize='large'/>
+                <Link 
+                    href="/en/cart"
+                >
+                    <IconButton aria-label="cart">
+                        <Badge
+                        badgeContent={totalItems}
+                        color="secondary"
+                        showZero
+                        >
+                            <ShoppingCartOutlinedIcon sx={{ color: '#fff' }} fontSize="large" />
+                        </Badge>
+                    </IconButton>
+                </Link>
             </div>
         </nav>
   )

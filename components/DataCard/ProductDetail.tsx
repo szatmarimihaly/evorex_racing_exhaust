@@ -36,7 +36,15 @@ const ProductDetail = ({ productData, locale, cartButtonText } : ProductDetailPr
         </div>
         <div className="flex flex-col gap-2">
             <span className="text-2xl font-semibold">{productData.price.toLocaleString()} € + VAT</span>
-            <CartButton cartButtonText={cartButtonText}/>
+            <CartButton 
+              cartButtonText={cartButtonText} 
+              product={{
+                id : productData.id,
+                name : productData.phonetic_name,
+                price : productData.price,
+                image : productData.image
+              }}
+            />
         </div>
       </div>
     </section>

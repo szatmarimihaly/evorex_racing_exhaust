@@ -12,7 +12,6 @@ type Params = {
         brand : string,
         shop: string
     }
-
 }
 
 export async function generateMetadata({ params } : Params) : Promise<Metadata> {

@@ -14,6 +14,10 @@
   "toModal" : "Termék megtekintése",
 
   "productSite" : "Termékoldal ehhez: ",
-  "addToCart" : "Kosárba"
+  "addToCart" : "Kosárba",
+
+  "emptyText" : "A kosarad üres.",
+  "totalText" : "Összesen",
+  "deleteText" : "Kosár ürítése"
 
 }
