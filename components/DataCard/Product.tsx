@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductImage from '../Image/ProductImage'
+import ProductImage from '../Image/ProductDetailImage'
 import Link from 'next/link'
 
 type ProductListProps = {

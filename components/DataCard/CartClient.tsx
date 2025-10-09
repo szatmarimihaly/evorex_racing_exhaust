@@ -5,15 +5,17 @@ import CartImage from '../Image/CartImage'
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined'
 import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined'
 import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined'
+import Link from 'next/link'
 
 type CartClientProps = {
     emptyText : string,
     totalText : string,
     deleteText : string,
     goToCheckOut : string
+    locale: string
 }
 
-export default function CartClient({emptyText, totalText, deleteText, goToCheckOut} : CartClientProps) {
+export default function CartClient({emptyText, totalText, deleteText, goToCheckOut, locale} : CartClientProps) {
   const { items, removeItem, increaseQuantity, decreaseQuantity, totalItems, clearCart } = useCartStore()
 
   if (items.length === 0) {
@@ -21,7 +23,7 @@ export default function CartClient({emptyText, totalText, deleteText, goToCheckO
   }
 
   return (
-    <div className="flex flex-col gap-4 max-w-2xl mx-auto p-4">
+    <div className="flex flex-col gap-4 max-w-xl mx-auto p-4">
       {items.map((item) => (
         <div key={item.id} className="flex flex-col items-center justify-between border-b pb-2">
           <div className='w-full flex items-center gap-2 justify-evenly'>
@@ -56,7 +58,7 @@ export default function CartClient({emptyText, totalText, deleteText, goToCheckO
 
       <div className="flex justify-between font-bold mt-4 mb-4">
         <span className='text-xl'>{totalText}{/*({totalItems})*/}</span>
-        <span>
+        <span className='text-xl'>
           {items.reduce((acc, i) => acc + i.price * i.quantity, 0).toLocaleString()} €
         </span>
       </div>
@@ -67,7 +69,7 @@ export default function CartClient({emptyText, totalText, deleteText, goToCheckO
       </button>
       */}
 
-      <button className='bg-black text-white px-4 py-2 rounded-lg text-xl'>{goToCheckOut}</button>
+      <Link className='bg-black text-white px-4 py-2 rounded-lg text-xl text-center' href={`/${locale}/checkout`}>{goToCheckOut}</Link>
     </div>
   )
 }

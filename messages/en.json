@@ -18,5 +18,16 @@
 
   "emptyText" : "Your cart is empty.",
   "totalText" : "Total Price",
-  "deleteText" : "Delete Cart"
+  "deleteText" : "Delete Cart",
+
+  "proceedToCheckout" : "Proceed To Checkout",
+  "checkoutFormTitle" : "Transport Information",
+  "submitButton" : "Payment",
+  "fullName" : "Full Name",
+  "emailText" : "info@example.com",
+  "landText" : "Hungary",
+  "cityText" : "Budapest",
+  "zipText" : "ZIP CODE",
+  "locationText" : "Hampshire St",
+  "houseNumber" : "10"
 }

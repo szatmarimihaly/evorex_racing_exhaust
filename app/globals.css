@@ -1,4 +1,15 @@
 @import "tailwindcss";
+@tailwind utilities;
+
+@layer utilities {
+  .input-field {
+    @apply bg-gray-100 outline-none p-2 rounded-xl w-full;
+  }
+
+  .input-error {
+    @apply text-red-500 text-sm;
+  }
+}
 
 :root {
   --background: #ffffff;

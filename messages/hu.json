@@ -18,6 +18,17 @@
 
   "emptyText" : "A kosarad üres.",
   "totalText" : "Összesen",
-  "deleteText" : "Kosár ürítése"
+  "deleteText" : "Kosár ürítése",
+
+  "proceedToCheckout" : "Tovább a fizetéshez",
+  "checkoutFormTitle" : "Szállítási adatok",
+  "submitButton" : "Fizetés",
+  "fullName" : "Teljes név",
+  "emailText" : "info@example.com",
+  "landText" : "Magyarország",
+  "cityText" : "Budapest",
+  "zipText" : "Irányítószám",
+  "locationText" : "Bérc utca",
+  "houseNumber" : "10"
 
 }

@@ -15,7 +15,7 @@ export default async function Page({ params } : Params){
 
   return (
     <main>
-      <CartClient emptyText={t('emptyText')} totalText={t('totalText')} deleteText={t('deleteText')} goToCheckOut='Proceed Checkout'/>
+      <CartClient emptyText={t('emptyText')} totalText={t('totalText')} deleteText={t('deleteText')} goToCheckOut='Proceed Checkout' locale={locale}/>
     </main>
   )
 }
