@@ -1,6 +1,7 @@
 import React from 'react'
 import CartClient from '@/components/DataCard/CartClient'
 import { getTranslations } from 'next-intl/server'
+import CheckoutNav from '@/components/Navbar/CheckoutNav'
 
 type Params = {
   params : {
@@ -15,6 +16,7 @@ export default async function Page({ params } : Params){
 
   return (
     <main>
+      <CheckoutNav />
       <CartClient emptyText={t('emptyText')} totalText={t('totalText')} deleteText={t('deleteText')} goToCheckOut='Proceed Checkout' locale={locale}/>
     </main>
   )

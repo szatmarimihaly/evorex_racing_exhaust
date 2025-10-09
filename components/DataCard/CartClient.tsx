@@ -10,16 +10,15 @@ import Link from 'next/link'
 type CartClientProps = {
     emptyText : string,
     totalText : string,
-    deleteText : string,
     goToCheckOut : string
     locale: string
 }
 
-export default function CartClient({emptyText, totalText, deleteText, goToCheckOut, locale} : CartClientProps) {
-  const { items, removeItem, increaseQuantity, decreaseQuantity, totalItems, clearCart } = useCartStore()
+export default function CartClient({emptyText, totalText, goToCheckOut, locale} : CartClientProps) {
+  const { items, removeItem, increaseQuantity, decreaseQuantity } = useCartStore()
 
   if (items.length === 0) {
-    return <p>{emptyText}</p>
+    return <p className='text-3xl text-center mt-20 font-bold'>{emptyText}</p>
   }
 
   return (

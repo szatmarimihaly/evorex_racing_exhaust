@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server'
 import React from 'react'
 import CheckOutForm from '@/components/CheckoutForm/CheckOutForm'
+import CheckoutDataNav from '@/components/Navbar/CheckoutDataNav'
 
 type Params = {
     params : {
@@ -15,7 +16,8 @@ export default async function Page({ params } : Params){
 
   return (
     <main>
-        <CheckOutForm checkoutFormTitle={t('checkoutFormTitle')} submitButton={t('submitButton')} fullname={t('fullName')} emailText={t('emailText')} phoneText='+36305771066' landText={t('landText')} cityText={t('cityText')} zipText={t('zipText')} locationText={t('locationText')} houseNumber={t('houseNumber')}/>
+        <CheckoutDataNav />
+        <CheckOutForm checkoutFormTitle={t('checkoutFormTitle')} submitButton={t('submitButton')} fullname={t('fullName')} emailText={t('emailText')} phoneText='+36305771066' landText={t('landText')} cityText={t('cityText')} zipText={t('zipText')} locationText={t('locationText')} houseNumber={t('houseNumber')} locale={locale}/>
     </main>
   )
 }

@@ -24,9 +24,10 @@ type Props = {
     zipText : string
     locationText : string
     houseNumber : string
+    locale : string
 }
 
-const CheckOutForm = ({ checkoutFormTitle, submitButton, fullname, emailText, landText, cityText, zipText, locationText, houseNumber, phoneText } : Props) => {
+const CheckOutForm = ({ checkoutFormTitle, submitButton, fullname, emailText, landText, cityText, zipText, locationText, houseNumber, phoneText, locale } : Props) => {
 
     const [formData, setFormData] = useState({
         fullName : '',
@@ -56,6 +57,7 @@ const CheckOutForm = ({ checkoutFormTitle, submitButton, fullname, emailText, la
             body : JSON.stringify({
                 customerData : formData,
                 cartItems,
+                locale
             })
         })
 
@@ -76,43 +78,43 @@ const CheckOutForm = ({ checkoutFormTitle, submitButton, fullname, emailText, la
             <h1 className='text-2xl font-semibold mb-4 text-center'>{checkoutFormTitle}</h1>
             <div className='flex gap-2 items-center w-full'>
                 <PersonIcon sx={{ color : 'black' }} fontSize='medium'/>
-                <input placeholder={fullname} className='input-field' name='fullName'/>
+                <input placeholder={fullname} className='input-field' name='fullName' required/>
             </div>
 
             <div className='flex gap-2 items-center w-full'>
                 <AlternateEmailIcon sx={{ color : 'black' }} fontSize='medium'/>
-                <input placeholder={emailText} className='input-field' name='email' />
+                <input placeholder={emailText} className='input-field' name='email' required/>
             </div>
 
             <div className='flex gap-2 items-center w-full'>
                 <PhoneAndroidIcon sx={{ color : 'black' }} fontSize='medium'/>
-                <input placeholder={phoneText} className='input-field' name='phone'/>
+                <input placeholder={phoneText} className='input-field' name='phone' required/>
             </div>
 
             <div className='flex gap-2 items-center w-full'>
                 <PublicOutlinedIcon sx={{ color : 'black' }} fontSize='medium'/>
-                <input placeholder={landText} className='input-field' name='land'/>
+                <input placeholder={landText} className='input-field' name='land' required/>
             </div>
 
             <div className='flex gap-2 items-center w-full'>
                 <LocationCityOutlinedIcon sx={{ color : 'black' }} fontSize='medium'/>
-                <input placeholder={cityText} className='input-field' name='city'/>
+                <input placeholder={cityText} className='input-field' name='city' required/>
             </div>
 
 
             <div className='flex gap-2 items-center w-full'>
                 <AppRegistrationOutlinedIcon sx={{ color : 'black' }} fontSize='medium'/>
-                <input placeholder={zipText} className='input-field' name='zip'/>
+                <input placeholder={zipText} className='input-field' name='zip' required/>
             </div>
 
             <div className='flex gap-2 items-center w-full'>
                 <LocationOnIcon sx={{ color : 'black' }} fontSize='medium'/>
-                <input placeholder={locationText} className='input-field' name='address'/>
+                <input placeholder={locationText} className='input-field' name='address' required/>
             </div>
 
             <div className='flex gap-2 items-center w-full'>
                 <RoofingIcon sx={{ color : 'black' }} fontSize='medium'/>
-                <input placeholder={houseNumber} className='input-field' name='addressNum'/>
+                <input placeholder={houseNumber} className='input-field' name='addressNum' required/>
             </div>
 
             <button

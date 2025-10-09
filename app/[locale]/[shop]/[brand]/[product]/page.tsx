@@ -25,7 +25,7 @@ export async function generateMetadata({ params } : Params) : Promise<Metadata>{
 
 export default async function Page({ params } : Params) {
   
-    const { locale, brand, product } = await params;
+    const { locale, product } = await params;
     const t = await getTranslations({ locale })
 
     const { data:productData, error: productError } = await supabase
