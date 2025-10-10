@@ -37,7 +37,7 @@ const CheckOutForm = ({ checkoutFormTitle, submitButton, fullname, emailText, la
         city: '',
         zip: '',
         address: '',
-        adressNum: '',
+        addressNum: '',
     })
 
     const [loading, setLoading] = useState(false)
