@@ -25,7 +25,6 @@ const Brands = ({ types, locale, navigateName, shopSlug } : Props) => {
                     key={type.id}
                     className='flex flex-col items-center justify-evenly p-4 rounded-lg shadow-xl'
                 >
-                    
                     <BrandImage imageType={type.image} nameType={type.name} />
                     <LinkButton href={`/${locale}/${shopSlug}/${type.slug}`} text={navigateName} />
                 </div>
