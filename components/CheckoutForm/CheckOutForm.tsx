@@ -78,43 +78,43 @@ const CheckOutForm = ({ checkoutFormTitle, submitButton, fullname, emailText, la
             <h1 className='text-2xl font-semibold mb-4 text-center'>{checkoutFormTitle}</h1>
             <div className='flex gap-2 items-center w-full'>
                 <PersonIcon sx={{ color : 'black' }} fontSize='medium'/>
-                <input placeholder={fullname} className='input-field' name='fullName' required/>
+                <input placeholder={fullname} className='input-field' name='fullName' required onChange={handleChange}/>
             </div>
 
             <div className='flex gap-2 items-center w-full'>
                 <AlternateEmailIcon sx={{ color : 'black' }} fontSize='medium'/>
-                <input placeholder={emailText} className='input-field' name='email' required/>
+                <input placeholder={emailText} className='input-field' name='email' required onChange={handleChange}/>
             </div>
 
             <div className='flex gap-2 items-center w-full'>
                 <PhoneAndroidIcon sx={{ color : 'black' }} fontSize='medium'/>
-                <input placeholder={phoneText} className='input-field' name='phone' required/>
+                <input placeholder={phoneText} className='input-field' name='phone' required onChange={handleChange}/>
             </div>
 
             <div className='flex gap-2 items-center w-full'>
                 <PublicOutlinedIcon sx={{ color : 'black' }} fontSize='medium'/>
-                <input placeholder={landText} className='input-field' name='land' required/>
+                <input placeholder={landText} className='input-field' name='land' required onChange={handleChange}/>
             </div>
 
             <div className='flex gap-2 items-center w-full'>
                 <LocationCityOutlinedIcon sx={{ color : 'black' }} fontSize='medium'/>
-                <input placeholder={cityText} className='input-field' name='city' required/>
+                <input placeholder={cityText} className='input-field' name='city' required onChange={handleChange}/>
             </div>
 
 
             <div className='flex gap-2 items-center w-full'>
                 <AppRegistrationOutlinedIcon sx={{ color : 'black' }} fontSize='medium'/>
-                <input placeholder={zipText} className='input-field' name='zip' required/>
+                <input placeholder={zipText} className='input-field' name='zip' required onChange={handleChange}/>
             </div>
 
             <div className='flex gap-2 items-center w-full'>
                 <LocationOnIcon sx={{ color : 'black' }} fontSize='medium'/>
-                <input placeholder={locationText} className='input-field' name='address' required/>
+                <input placeholder={locationText} className='input-field' name='address' required onChange={handleChange}/>
             </div>
 
             <div className='flex gap-2 items-center w-full'>
                 <RoofingIcon sx={{ color : 'black' }} fontSize='medium'/>
-                <input placeholder={houseNumber} className='input-field' name='addressNum' required/>
+                <input placeholder={houseNumber} className='input-field' name='addressNum' required onChange={handleChange}/>
             </div>
 
             <button

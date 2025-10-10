@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import stripe from '@/lib/stripe'
+import { CartItem } from '@/store/cartStore'
 
 // app/api/create-checkout-session/route.ts
 export async function POST(req: Request) {
@@ -17,7 +18,7 @@ export async function POST(req: Request) {
         customerData: JSON.stringify(customerData),
         cartItems: JSON.stringify(cartItems),
       },
-      line_items: cartItems.map((item: any) => ({
+      line_items: cartItems.map((item: CartItem) => ({
         price_data: {
           currency: 'eur',
           product_data: {
