@@ -36,7 +36,24 @@
   "cancelText" : "PAYMENT CANCELED",
   "backHomeText" : "BACK TO HOMEPAGE",
 
-  "aboutCompanyText" : "ABOUT",
+  "aboutCompanyText" : "ABOUT EVOREX",
   "aboutText1" : "EVOREX Racing Exhaust is a premium motorcycle exhaust brand inspired by the world of racing, yet fully tailored to meet the needs of street riders. Our team has years of experience in motorsport, ensuring that every product embodies cutting-edge technology and track-tested expertise.",
-  "aboutText2" : "EVOREX is more than an exhaust, it is an extension of your bike's personality, delivering the perfect harmony of performance and sound."
+  "aboutText2" : "EVOREX is more than an exhaust, it is an extension of your bike's personality, delivering the perfect harmony of performance and sound.",
+
+  "title1" : "Precision Engineering",
+  "title2" : "Signature Sound",
+  "title3" : "Premium Materials",
+  "title4" : "Racing Heritage",
+  "title5" : "Reliability & Endurance",
+  "title6" : "Design & Aesthetics",
+
+  "aero" : "Aerospace-Grade Material",
+  "heat" : "Extreme Heat Resistance",
+  "weight" : "Lightweight & Durable",
+  "mainTitle" : "Material Quality – TC6 Grade Titanium: The Foundation of Performance",
+  "materialdesc1" : "Every component of the EVOREX Racing Exhaust is crafted from TC6 grade titanium – the same material trusted in aerospace and high-end motorsport for its unmatched combination of lightness, strength, and endurance. This alloy represents the pinnacle of engineering excellence: exceptionally strong, incredibly lightweight, and highly resistant to heat and stress.",
+  "materialdesc2" : "Using TC6 titanium is more than a technical choice – it's a statement of our commitment to quality. Each EVOREX system is designed to withstand extreme thermal and mechanical loads while maintaining its flawless appearance and structural integrity. The natural oxidation layer of titanium protects the surface from corrosion, ensuring that your exhaust retains its metallic sheen and premium aesthetics even after years of hard use.",
+  "materialdesc3" : "EVOREX exhausts are built without compromise. Every pipe, weld, and junction is produced through precision manufacturing – using advanced CNC machining and laser-cutting technologies, combined with meticulous hand-finishing. This process ensures that each piece is perfectly fitted, structurally sound, and meets the strictest standards of professional motorsport.",
+  "materialdesc4" : "The choice of TC6 titanium is not only about reducing weight – it's about creating a system thatreacts faster, handles sharper, and sounds cleaner. It's about transforming every ride into astatement of engineering and passion. TC6 grade titanium stands for performance, reliability, and refinement – the foundation upon which every EVOREX exhaust is built."
+  
 }

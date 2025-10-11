@@ -15,7 +15,7 @@
   }
 
   .text-p {
-    @apply text-xl leading-relaxed text-justify mt-10;
+    @apply text-xl leading-relaxed text-justify mt-10 text-gray-300;
   }
 }
 

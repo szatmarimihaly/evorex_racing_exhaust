@@ -1,5 +1,5 @@
 {
-  "heroTitle" : "„VERSENYPÁLYÁN SZÜLETETT.”",
+  "heroTitle" : "„Verseny pályán született. Utcára tervezve.”",
   "heroButton" : "VÁSÁROLJ MOST",
 
   "shopSlug" : "Márkaválasztás",
@@ -36,7 +36,23 @@
   "cancelText" : "FIZETÉS MEGSZAKÍTVA",
   "backHomeText" : "VISSZA A FŐOLDALRA",
 
-  "aboutCompanyText" : "RÓLUNK",
+  "aboutCompanyText" : "RÓLUNK, MINT EVOREX",
   "aboutText1" : "Az EVOREX Racing Exhaust egy olyan prémium motor kipufogó márka, amely a versenypálya világából meríti inspirációját, ugyanakkor az utcai motorosok igényeit is teljes mértékben figyelembe veszi. Csapatunk évek óta dolgozik a motorsportban, így minden termékünk a legmodernebb technológiát és versenyből származó tapasztalatot hordozza magában.",
-  "aboutText2" : "Az EVOREX nem csupán kipufogó, a motorod személyiségének kiterjesztése, amely a teljesítmény és a hangzás tökéletes harmóniáját nyújtja."
+  "aboutText2" : "Az EVOREX nem csupán kipufogó, a motorod személyiségének kiterjesztése, amely a teljesítmény és a hangzás tökéletes harmóniáját nyújtja.",
+  
+  "title1" : "Mérnöki Precizitás",
+  "title2" : "Egyedi Hangzás",
+  "title3" : "Prémium Anyagok",
+  "title4" : "Versenypályás Örökség",
+  "title5" : "Megbízhatóság és Tartósság",
+  "title6" : "Design és Esztétika",
+
+  "aero" : "Repülőgépipari minőségű anyag",
+  "heat" : "Rendkívüli hőállóság",
+  "weight" : "Könnyű és tartós",
+  "mainTitle" : "Anyagminőség – TC6 Grade Titánium: A teljesítmény alapja",
+  "materialdesc1" : "Az EVOREX Racing Exhaust minden egyes alkatrésze TC6 grade titániumból készül – ugyanabból az anyagból, amelyet a repülőgépiparban és a prémium motorsportban is megbízhatónak tartanak, kivételes kombinációja miatt a könnyűségnek, az erőnek és a tartósságnak. Ez az ötvözet a mérnöki kiválóság csúcsát képviseli: rendkívül erős, hihetetlenül könnyű és kiemelkedően ellenálló a hő és a mechanikai terhelés ellen.",
+  "materialdesc2" : "A TC6 titánium használata nem pusztán technikai döntés – ez a minőség iránti elkötelezettségünk kinyilvánítása. Minden EVOREX rendszer úgy lett tervezve, hogy ellenálljon az extrém hő- és mechanikai terheléseknek, miközben megőrzi hibátlan megjelenését és szerkezeti integritását. A titánium természetes oxidációs rétege védi a felületet a korróziótól, biztosítva, hogy a kipufogód évek intenzív használata után is megőrizze fémes fényét és prémium esztétikáját.",
+  "materialdesc3" : "Az EVOREX kipufogók kompromisszumok nélkül készülnek. Minden cső, hegesztés és illesztés precíziós gyártási folyamaton megy keresztül – fejlett CNC és lézeres vágási technológiákkal, valamint aprólékos kézi utómunkálatokkal kombinálva. Ez a folyamat garantálja, hogy minden darab tökéletesen illeszkedjen, szerkezetileg stabil legyen, és megfeleljen a profi motorsport szigorú előírásainak.",
+  "materialdesc4" : "A TC6 titánium választása nem csupán a súlycsökkentésről szól – hanem arról, hogy egy olyan rendszert hozzunk létre, amely gyorsabban reagál, precízebben kezelhető, és tisztábban szól. Arról szól, hogy minden egyes motorozást a mérnöki tudás és a szenvedély kifejezésévé alakítsunk. A TC6 grade titánium a teljesítmény, a megbízhatóság és a kifinomultság szimbóluma – az alap, amire minden EVOREX kipufogó épül."
 }
