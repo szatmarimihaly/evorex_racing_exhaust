@@ -34,7 +34,7 @@ const Product = ({ types, locale, modalText, shopSlug, brand } : Props) => {
 
                     <Link 
                         href={`/${locale}/${shopSlug}/${brand}/${type.url}`} 
-                        className='w-full mt-10 bg-black text-white px-4 py-2 rounded text-center font-semibold'
+                        className='w-full mt-10 bg-black text-white px-4 py-2 rounded text-center font-semibold transition-all duration-300 hover:scale-105'
                     >
                         {modalText}
                     </Link>

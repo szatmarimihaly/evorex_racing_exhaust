@@ -1,19 +1,30 @@
 'use client'
-import React from 'react'
-import { ReactNode } from 'react'
-import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import { supabase } from '@/lib/supabaseClient';
 
 type ImageProps = {
-  imageType: string
-  nameType: string
-  children?: ReactNode
-}
-
+  imageType: string;
+  nameType: string;
+  children?: React.ReactNode;
+};
 
 const ProductImage = ({ imageType, nameType, children }: ImageProps) => {
   const formats = ['png', 'webp', 'jpg'];
   const [currentFormatIndex, setCurrentFormatIndex] = useState(0);
+  const [imageUrl, setImageUrl] = useState<string | null>(null);
+
+  useEffect(() => {
+    const loadImage = async () => {
+      const { data } = supabase.storage
+        .from('products')
+        .getPublicUrl(`${imageType}.${formats[currentFormatIndex]}`);
+      
+      setImageUrl(data.publicUrl);
+    };
+
+    loadImage();
+  }, [currentFormatIndex, imageType]);
 
   const handleError = () => {
     if (currentFormatIndex < formats.length - 1) {
@@ -21,13 +32,13 @@ const ProductImage = ({ imageType, nameType, children }: ImageProps) => {
     }
   };
 
-  const src = `/products/${imageType}.${formats[currentFormatIndex]}`;
+  if (!imageUrl) return <div>Loading...</div>;
 
   return (
     <div className="flex flex-col items-center">
       <div className="relative w-100 h-100 flex items-center justify-center">
         <Image
-          src={src}
+          src={imageUrl}
           alt={nameType}
           fill
           className="object-contain"
@@ -40,4 +51,4 @@ const ProductImage = ({ imageType, nameType, children }: ImageProps) => {
   );
 };
 
-export default ProductImage
+export default ProductImage;
