@@ -1,10 +1,17 @@
 import LoginForm from '@/components/Login/LoginForm'
 import React from 'react'
 import Image from 'next/image'
+import { getTranslations } from 'next-intl/server'
 
-const Page = () => {
+type Params = {
+  params : {
+    locale : string
+  }
+}
 
+export default async function Page({ params } : Params) {
 
+  const { locale } = await params
 
   return (
     <main className='flex flex-col items-center'>
@@ -15,10 +22,8 @@ const Page = () => {
             alt='EVOREX LOGO'
             className='mt-10'
         />
-        <LoginForm />
+        <LoginForm locale={locale} />
         
     </main>
   )
 }
-
-export default Page

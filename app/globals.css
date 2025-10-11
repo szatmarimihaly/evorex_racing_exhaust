@@ -9,6 +9,14 @@
   .input-error {
     @apply text-red-500 text-sm;
   }
+
+  .main-h3 {
+    @apply font-bold text-5xl mb-10 text-center;
+  }
+
+  .text-p {
+    @apply text-xl leading-relaxed text-justify mt-10;
+  }
 }
 
 :root {

@@ -29,5 +29,14 @@
   "cityText" : "Budapest",
   "zipText" : "ZIP CODE",
   "locationText" : "Hampshire St",
-  "houseNumber" : "10"
+  "houseNumber" : "10",
+  "logoutText" : "Log out",
+  "detailText" : "Details",
+  "successText" : "THANK YOU FOR YOUR ORDER",
+  "cancelText" : "PAYMENT CANCELED",
+  "backHomeText" : "BACK TO HOMEPAGE",
+
+  "aboutCompanyText" : "ABOUT",
+  "aboutText1" : "EVOREX Racing Exhaust is a premium motorcycle exhaust brand inspired by the world of racing, yet fully tailored to meet the needs of street riders. Our team has years of experience in motorsport, ensuring that every product embodies cutting-edge technology and track-tested expertise.",
+  "aboutText2" : "EVOREX is more than an exhaust, it is an extension of your bike's personality, delivering the perfect harmony of performance and sound."
 }

@@ -5,7 +5,11 @@ import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { useRouter } from 'next/navigation'
 import { supabase } from '@/lib/supabaseClient'
 
-export default function LoginForm() {
+type Props = {
+    locale : string
+}
+
+export default function LoginForm({ locale } : Props) {
 
     const supabase = createClientComponentClient()
     const router = useRouter()
@@ -30,7 +34,7 @@ export default function LoginForm() {
             return
         }
 
-        router.push('/hu/admin')
+        router.push(`/${locale}/admin`)
     }
 
     
@@ -63,7 +67,7 @@ export default function LoginForm() {
                 disabled={loading}
                 className='w-full bg-black text-white py-4 px-2 rounded-xl mt-4'
             >
-                {loading ? 'Belépés...' : 'Belépés'}
+                {loading ? 'Logging in...' : 'Login to admin'}
             </button>
         </form>
     </div>

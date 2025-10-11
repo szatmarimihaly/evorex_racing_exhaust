@@ -29,6 +29,14 @@
   "cityText" : "Budapest",
   "zipText" : "Irányítószám",
   "locationText" : "Bérc utca",
-  "houseNumber" : "10"
+  "houseNumber" : "10",
+  "logoutText" : "Kilépés",
+  "detailText" : "Részletek",
+  "successText" : "KÖSZÖNJÜK, RENDELÉSEDET MEGKAPTUK",
+  "cancelText" : "FIZETÉS MEGSZAKÍTVA",
+  "backHomeText" : "VISSZA A FŐOLDALRA",
 
+  "aboutCompanyText" : "RÓLUNK",
+  "aboutText1" : "Az EVOREX Racing Exhaust egy olyan prémium motor kipufogó márka, amely a versenypálya világából meríti inspirációját, ugyanakkor az utcai motorosok igényeit is teljes mértékben figyelembe veszi. Csapatunk évek óta dolgozik a motorsportban, így minden termékünk a legmodernebb technológiát és versenyből származó tapasztalatot hordozza magában.",
+  "aboutText2" : "Az EVOREX nem csupán kipufogó, a motorod személyiségének kiterjesztése, amely a teljesítmény és a hangzás tökéletes harmóniáját nyújtja."
 }
