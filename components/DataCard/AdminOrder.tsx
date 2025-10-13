@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import OrderedItems from '../Button/OrderedItems'
+import RemoveCircleIcon from '@mui/icons-material/RemoveCircle'
 
 type AdminOrderProps = {
     id: number,
@@ -21,11 +22,13 @@ type Props = {
     types: AdminOrderProps[],
     locale: string,
     text: string
+    deleteButtonText: string
+    askText : string
 }
 
-const AdminOrder = ({ types, locale, text }: Props) => {
+const AdminOrder = ({ types, locale, text, deleteButtonText, askText }: Props) => {
   return (
-    <div className='w-full space-y-4 max-w-7xl mx-auto px-4 mb-10'>
+    <div className='w-full space-y-4 max-w-8xl mx-auto px-4 mb-10'>
       {types.map((type) => {
 
         const date = new Date(type.created_at)
@@ -56,6 +59,28 @@ const AdminOrder = ({ types, locale, text }: Props) => {
             <p>{type.country}, {type.city}, {type.zip}</p>
             <p>{type.address} {type.house_number}</p>
             <OrderedItems text={text} locale={locale} id={type.id}/>
+            
+            <button 
+              className='bg-red-200 p-2 rounded-full flex items-center font-bold gap-2'
+              onClick={async () => {
+                  if(!confirm(askText)) return;
+
+                  const res = await fetch('/api/delete-order', {
+                      method: 'DELETE',
+                      headers: { 'Content-Type' : 'application/json' },
+                      body: JSON.stringify({ id: type.id }) 
+                  })
+
+                  if(res.ok) {
+                    alert('Rendelés törölve!')
+                    window.location.reload()
+                  }else {
+                    alert('Hiba történt a törlés során!')
+                  }
+              }}
+            >
+                {deleteButtonText.toLocaleUpperCase()}<RemoveCircleIcon sx={{ color : 'red', fontSize : 40 }}/>
+            </button>
           </div>
         )
       })}

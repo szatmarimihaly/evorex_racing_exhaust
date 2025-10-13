@@ -10,9 +10,11 @@ type Props = {
 const MainHero = ({ shopText } : Props) => {
   return (
     <div className='mt-20 flex flex-col items-center justify-center'>
-        <h1 className='text-6xl font-bold w-full text-center'>EVOREX</h1>
-        <h2 className='text-6xl font-bold w-full text-center'>RACING</h2>
-        <h2 className='text-6xl font-bold mb-4 w-full text-center'>EXHAUST</h2>
+        <div className='bg-black text-wite p-10 rounded-md w-full'>
+          <h1 className='text-6xl font-bold mb-2 w-full text-center text-white'>EVOREX</h1>
+          <h2 className='text-6xl font-bold mb-2 w-full text-center text-white'>RACING</h2>
+          <h2 className='text-6xl font-bold mb-4 w-full text-center text-white'>EXHAUST</h2>
+        </div>
         <EmailCollector />
          <div className="relative w-full max-w-6xl mt-20">
             <Image

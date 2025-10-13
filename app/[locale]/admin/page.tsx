@@ -33,10 +33,12 @@ export default async function Page({ params } : Params) {
 
     if(error) return <p>Error by data fetching: {error.message}</p>
 
+
+
   return (
     <main>
         <AdminNav logoutText={t('logoutText')}/>
-        <AdminOrder locale={locale} types={orderData ?? []} text={t('detailText')}/>
+        <AdminOrder locale={locale} types={orderData ?? []} text={t('detailText')} deleteButtonText={t('deleteButtonText')} askText={t('askText')}/>
     </main>
   )
 }

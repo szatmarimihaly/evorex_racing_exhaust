@@ -54,6 +54,9 @@
   "materialdesc1" : "Every component of the EVOREX Racing Exhaust is crafted from TC6 grade titanium – the same material trusted in aerospace and high-end motorsport for its unmatched combination of lightness, strength, and endurance. This alloy represents the pinnacle of engineering excellence: exceptionally strong, incredibly lightweight, and highly resistant to heat and stress.",
   "materialdesc2" : "Using TC6 titanium is more than a technical choice – it's a statement of our commitment to quality. Each EVOREX system is designed to withstand extreme thermal and mechanical loads while maintaining its flawless appearance and structural integrity. The natural oxidation layer of titanium protects the surface from corrosion, ensuring that your exhaust retains its metallic sheen and premium aesthetics even after years of hard use.",
   "materialdesc3" : "EVOREX exhausts are built without compromise. Every pipe, weld, and junction is produced through precision manufacturing – using advanced CNC machining and laser-cutting technologies, combined with meticulous hand-finishing. This process ensures that each piece is perfectly fitted, structurally sound, and meets the strictest standards of professional motorsport.",
-  "materialdesc4" : "The choice of TC6 titanium is not only about reducing weight – it's about creating a system thatreacts faster, handles sharper, and sounds cleaner. It's about transforming every ride into astatement of engineering and passion. TC6 grade titanium stands for performance, reliability, and refinement – the foundation upon which every EVOREX exhaust is built."
+  "materialdesc4" : "The choice of TC6 titanium is not only about reducing weight – it's about creating a system thatreacts faster, handles sharper, and sounds cleaner. It's about transforming every ride into astatement of engineering and passion. TC6 grade titanium stands for performance, reliability, and refinement – the foundation upon which every EVOREX exhaust is built.",
+
+  "deleteButtonText" : "Delete",
+  "askText" : "You really want to delete this order?"
   
 }

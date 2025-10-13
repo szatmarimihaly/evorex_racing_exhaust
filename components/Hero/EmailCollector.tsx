@@ -12,7 +12,7 @@ export default function EmailCollector() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    if (!email) {
+    if(!email) {
       setMessage("Please enter your email")
       return
     }
@@ -20,15 +20,25 @@ export default function EmailCollector() {
     setIsSubmitting(true)
     setMessage("")
 
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-
-    setMessage("Thanks for subscribing!")
-    setEmail("")
-    setIsSubmitting(false)
+    try{
+      const res = await fetch('/api/subscribe', {
+        method : 'POST',
+        headers : { "Content-Type" : "application/json" },
+        body : JSON.stringify({ email }) 
+      })
+      
+      const data = await res.json()
+      setMessage(data.message || "Subscription complete!")
+    }catch (err){
+      setMessage("Something went wrong. Please try again.")
+    }finally {
+      setIsSubmitting(false)
+      setMessage('')
+    }
   }
 
   return (
-    <div className="w-full max-w-md mx-auto px-2">
+    <div className="w-full max-w-md mx-auto px-2 mt-10">
       <form onSubmit={handleSubmit} className="relative">
         <div className="relative flex items-center rounded-full border-2 border-black bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
           <input
