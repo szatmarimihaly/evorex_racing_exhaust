@@ -14,13 +14,12 @@ export default async function Page({ params } : Params) {
   const { locale } = await params
 
   return (
-    <main className='flex flex-col items-center'>
+    <main className='min-h-screen flex flex-col justify-center items-center'>
         <Image 
-            src='/evorex-logo-white.png'
-            width={100}
-            height={100}
+            src='/evorex-black-logo.jpeg'
+            width={150}
+            height={150}
             alt='EVOREX LOGO'
-            className='mt-10'
         />
         <LoginForm locale={locale} />
         

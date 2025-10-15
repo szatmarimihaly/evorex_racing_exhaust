@@ -3,7 +3,6 @@ import React from 'react'
 import { useState } from 'react'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { useRouter } from 'next/navigation'
-import { supabase } from '@/lib/supabaseClient'
 
 type Props = {
     locale : string

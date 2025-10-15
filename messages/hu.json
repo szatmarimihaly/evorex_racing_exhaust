@@ -57,5 +57,8 @@
   "materialdesc4" : "A TC6 titánium választása nem csupán a súlycsökkentésről szól – hanem arról, hogy egy olyan rendszert hozzunk létre, amely gyorsabban reagál, precízebben kezelhető, és tisztábban szól. Arról szól, hogy minden egyes motorozást a mérnöki tudás és a szenvedély kifejezésévé alakítsunk. A TC6 grade titánium a teljesítmény, a megbízhatóság és a kifinomultság szimbóluma – az alap, amire minden EVOREX kipufogó épül.",
 
   "deleteButtonText" : "Törlés",
-  "askText" : "Biztosan törölni szeretnéde ezt a rendelést?"
+  "askText" : "Biztosan törölni szeretnéde ezt a rendelést?",
+  "whereToText" : "Email lista",
+  "addItem" : "Termék feltöltése",
+  "currentOrder" : "Beérkezett rendelések"
 }

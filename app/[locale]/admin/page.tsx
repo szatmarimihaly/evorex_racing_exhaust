@@ -6,6 +6,7 @@ import { redirect } from 'next/navigation'
 import { supabase } from '@/lib/supabaseClient'
 import AdminOrder from '@/components/DataCard/AdminOrder'
 import AdminNav from '@/components/Navbar/AdminNav'
+import NavigateList from '@/components/Admin/NavigateList'
 
 type Params = {
     params : {
@@ -38,6 +39,11 @@ export default async function Page({ params } : Params) {
   return (
     <main>
         <AdminNav logoutText={t('logoutText')}/>
+        <div className='mb-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full max-w-3xl mx-auto px-4 py-8 bg-black gap-4 rounded-xl shadow-xl'>
+            <NavigateList whereToText={t('whereToText')} whereTo={`/${locale}/admin/email`}/>
+            <NavigateList whereToText={t('addItem')} whereTo={`/${locale}/admin/item`} />
+        </div>
+        <h2 className='text-center text-2xl font-bold mb-4'>{t('currentOrder')}</h2>
         <AdminOrder locale={locale} types={orderData ?? []} text={t('detailText')} deleteButtonText={t('deleteButtonText')} askText={t('askText')}/>
     </main>
   )

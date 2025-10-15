@@ -57,6 +57,9 @@
   "materialdesc4" : "The choice of TC6 titanium is not only about reducing weight – it's about creating a system thatreacts faster, handles sharper, and sounds cleaner. It's about transforming every ride into astatement of engineering and passion. TC6 grade titanium stands for performance, reliability, and refinement – the foundation upon which every EVOREX exhaust is built.",
 
   "deleteButtonText" : "Delete",
-  "askText" : "You really want to delete this order?"
+  "askText" : "You really want to delete this order?",
+  "whereToText" : "Email List",
+  "addItem" : "Upload Item",
+  "currentOrder" : "Current Orders" 
   
 }
